@@ -1,0 +1,9 @@
+First public release.
+
+• Nine actions: Disk Space, Disk Health, Disk Temperature, Disk Activity, Disk Overview, Network, Fan, Power and Back.
+• SMART health: remaining life, power-on hours and start count, matched to each drive letter by model, sensor name or closest match.
+• Threshold alerts on free space, temperature and remaining life, with a flashing frame.
+• Automatic rotation through every drive or sensor, with press to advance.
+• Full-screen dashboard profiles for Stream Deck, XL, Mini and Stream Deck +.
+• Sensors discovered automatically from LibreHardwareMonitor (any local address and port) with fallback to HWiNFO.
+• English and Italian, following the Stream Deck app language.

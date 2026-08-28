@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head><meta charset="utf-8"><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div class="row"><label>Fan</label><select data-setting="fanSensor"></select></div>
+  <div class="row"><label>Label</label><input type="text" data-setting="title" placeholder="fan name"></div>
+  <div class="row"><label>Colour</label>
+    <select data-setting="accent">
+      <option value="auto">Blue (default)</option>
+      <option value="green">Green</option>
+      <option value="cyan">Cyan</option>
+      <option value="yellow">Yellow</option>
+      <option value="orange">Orange</option>
+      <option value="red">Red</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+      <option value="custom">Custom (RGB)</option>
+    </select>
+  </div>
+  <div class="rgb" data-rgb-for="accent"></div>
+  <div class="row"><label>Rotation</label>
+    <select data-setting="rotate">
+      <option value="off">Off</option>
+      <option value="on">All fans in turn</option>
+    </select>
+  </div>
+  <div class="row"><label>Change every</label><input type="range" min="2" max="30" step="1" data-setting="rotateEvery" data-default="5"><span class="value" data-value-of="rotateEvery"></span></div>
+  <div class="row"><label>Bar count</label><input type="range" min="6" max="40" step="1" data-setting="maxBars" data-default="20"><span class="value" data-value-of="maxBars"></span></div>
+  <details>
+    <summary>Appearance (colours and sizes)</summary>
+  <div class="row"><label>Label colour</label>
+    <select data-setting="labelColor">
+      <option value="auto">Default</option>
+      <option value="green">Green</option>
+      <option value="cyan">Cyan</option>
+      <option value="yellow">Yellow</option>
+      <option value="orange">Orange</option>
+      <option value="red">Red</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+      <option value="custom">Custom (RGB)</option>
+    </select>
+  </div>
+  <div class="rgb" data-rgb-for="labelColor"></div>
+  <div class="row"><label>Size</label><input type="range" min="9" max="22" step="1" data-setting="labelSize" data-default="13"><span class="value" data-value-of="labelSize"></span></div>
+  </details>
+  <div class="status" data-status></div>
+  <script src="pi.js"></script>
+</body>
+</html>

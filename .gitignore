@@ -1,0 +1,12 @@
+# Dipendenze e artefatti rigenerabili
+node_modules/
+build/
+dist/
+logs/
+
+# Icone e profili: li produce `npm run build`
+com.diskdeck.monitor.sdPlugin/imgs/*.png
+com.diskdeck.monitor.sdPlugin/*.streamDeckProfile
+
+# Anteprime di lavoro
+preview.html

@@ -1,0 +1,7 @@
+{
+  "name": "com.diskdeck.monitor",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "dependencies": { "@elgato/streamdeck": "^2.1.2" }
+}

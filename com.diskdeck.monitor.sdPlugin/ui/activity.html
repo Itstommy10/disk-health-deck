@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="it">
+<head><meta charset="utf-8"><link rel="stylesheet" href="style.css"></head>
+<body>
+  <div class="row"><label>Drive</label><select data-setting="drive" data-total="true"></select></div>
+  <div class="row"><label>Label</label><input type="text" data-setting="title" placeholder="automatic"></div>
+  <div class="row"><label>Style</label>
+    <select data-setting="style">
+      <option value="lines">Read/write lines</option>
+      <option value="bars">Histogram</option>
+    </select>
+  </div>
+  <div class="row"><label>Series</label>
+    <select data-setting="ioTrack">
+      <option value="total">Read + write</option>
+      <option value="read">Read only</option>
+      <option value="write">Write only</option>
+      <option value="stacked">Stacked (read + write)</option>
+    </select>
+  </div>
+  <div class="row"><label>Bar colour</label>
+    <select data-setting="accent">
+      <option value="auto">Cyan (default)</option>
+      <option value="green">Green</option>
+      <option value="cyan">Cyan</option>
+      <option value="yellow">Yellow</option>
+      <option value="orange">Orange</option>
+      <option value="red">Red</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+      <option value="custom">Custom (RGB)</option>
+    </select>
+  </div>
+  <div class="rgb" data-rgb-for="accent"></div>
+  <div class="row"><label>Rotation</label>
+    <select data-setting="rotate">
+      <option value="off">Off</option>
+      <option value="on">All drives in turn</option>
+    </select>
+  </div>
+  <div class="row"><label>Change every</label><input type="range" min="2" max="30" step="1" data-setting="rotateEvery" data-default="5"><span class="value" data-value-of="rotateEvery"></span></div>
+  <div class="hint">With rotation on, the key jumps straight to the next one.</div>
+  <div class="row"><label>Long press</label>
+    <select data-setting="longPress">
+      <option value="on">Opens the disk view</option>
+      <option value="off">No action</option>
+    </select>
+  </div>
+  <details>
+    <summary>Appearance (colours and sizes)</summary>
+  <div class="row"><label>Label colour</label>
+    <select data-setting="labelColor">
+      <option value="auto">Default</option>
+      <option value="green">Green</option>
+      <option value="cyan">Cyan</option>
+      <option value="yellow">Yellow</option>
+      <option value="orange">Orange</option>
+      <option value="red">Red</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+          <option value="custom">Custom (RGB)</option>
+    </select>
+  </div>
+  <div class="rgb" data-rgb-for="labelColor"></div>
+  <div class="row"><label>Size</label><input type="range" min="9" max="22" step="1" data-setting="labelSize" data-default="13"><span class="value" data-value-of="labelSize"></span></div>
+  <div class="row"><label>Peak colour</label>
+    <select data-setting="peakColor">
+      <option value="auto">Default (grey)</option>
+      <option value="green">Green</option>
+      <option value="cyan">Cyan</option>
+      <option value="yellow">Yellow</option>
+      <option value="orange">Orange</option>
+      <option value="red">Red</option>
+      <option value="purple">Purple</option>
+      <option value="blue">Blue</option>
+      <option value="custom">Custom (RGB)</option>
+    </select>
+  </div>
+  <div class="rgb" data-rgb-for="peakColor"></div>
+  <div class="row"><label>Peak size</label><input type="range" min="8" max="18" step="1" data-setting="peakSize" data-default="10"><span class="value" data-value-of="peakSize"></span></div>
+  <div class="row"><label>Bar count</label><input type="range" min="6" max="40" step="1" data-setting="maxBars" data-default="20"><span class="value" data-value-of="maxBars"></span></div>
+  </details>
+  <div class="hint">Press the key to switch between lines and histogram. Series and colour apply to the histogram.</div>
+  <div class="status" data-status></div>
+  <script src="pi.js"></script>
+</body>
+</html>

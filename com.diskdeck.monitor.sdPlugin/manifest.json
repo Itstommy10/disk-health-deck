@@ -1,0 +1,199 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "com.diskdeck.monitor",
+  "Name": "Disk Health Deck",
+  "Version": "1.0.0.0",
+  "Author": "Itstommy10",
+  "Description": "Disk dashboard for your desk: free space, SMART health, I/O activity, temperatures, plus network, fans and power. Threshold alerts flash the key when a disk runs low, overheats or wears out. Sensors require LibreHardwareMonitor (web server enabled) or HWiNFO.",
+  "Category": "Disk Health Deck",
+  "CategoryIcon": "imgs/category",
+  "Icon": "imgs/plugin",
+  "URL": "https://github.com/",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "CodePath": "bin/plugin.js",
+  "Actions": [
+    {
+      "UUID": "com.diskdeck.monitor.usage",
+      "Name": "Disk Space",
+      "Icon": "imgs/action-usage",
+      "Tooltip": "Free space of a drive, as a ring or a bar.",
+      "PropertyInspectorPath": "ui/usage.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-usage-key",
+          "TitleAlignment": "middle",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.activity",
+      "Name": "Disk Activity",
+      "Icon": "imgs/action-activity",
+      "Tooltip": "Live read and write throughput, as lines or a histogram.",
+      "PropertyInspectorPath": "ui/activity.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-activity-key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.overview",
+      "Name": "Disk Overview",
+      "Icon": "imgs/action-overview",
+      "Tooltip": "Compact bars with the usage of every drive.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-overview-key",
+          "ShowTitle": false
+        }
+      ],
+      "PropertyInspectorPath": "ui/overview.html"
+    },
+    {
+      "UUID": "com.diskdeck.monitor.temp",
+      "Name": "Disk Temperature",
+      "Icon": "imgs/action-temp",
+      "Tooltip": "Drive temperature with a colour-coded scale.",
+      "PropertyInspectorPath": "ui/temp.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-temp-key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.power",
+      "Name": "Power",
+      "Icon": "imgs/action-power",
+      "Tooltip": "Power draw of a CPU, GPU or other component, with history.",
+      "PropertyInspectorPath": "ui/power.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-power-key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.back",
+      "Name": "Back",
+      "Icon": "imgs/action-back",
+      "Tooltip": "Return to the previous profile. Meant for the plugin disk view.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-back-key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.health",
+      "Name": "Disk Health",
+      "Icon": "imgs/action-health",
+      "Tooltip": "Remaining life, power-on hours and start count (SMART).",
+      "PropertyInspectorPath": "ui/health.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-health-key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.network",
+      "Name": "Network",
+      "Icon": "imgs/action-network",
+      "Tooltip": "Live download and upload of a network interface.",
+      "PropertyInspectorPath": "ui/network.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-network-key",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "UUID": "com.diskdeck.monitor.fan",
+      "Name": "Fan",
+      "Icon": "imgs/action-fan",
+      "Tooltip": "Fan speed in RPM, with history.",
+      "PropertyInspectorPath": "ui/fan.html",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/action-fan-key",
+          "ShowTitle": false
+        }
+      ]
+    }
+  ],
+  "Profiles": [
+    {
+      "Name": "Disks",
+      "DeviceType": 0,
+      "Readonly": false,
+      "DontAutoSwitchWhenInstalled": true
+    },
+    {
+      "Name": "Disks Mini",
+      "DeviceType": 1,
+      "Readonly": false,
+      "DontAutoSwitchWhenInstalled": true
+    },
+    {
+      "Name": "Disks XL",
+      "DeviceType": 2,
+      "Readonly": false,
+      "DontAutoSwitchWhenInstalled": true
+    },
+    {
+      "Name": "Disks Plus",
+      "DeviceType": 7,
+      "Readonly": false,
+      "DontAutoSwitchWhenInstalled": true
+    }
+  ]
+}

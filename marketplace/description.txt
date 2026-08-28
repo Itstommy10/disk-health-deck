@@ -1,0 +1,24 @@
+Disk Health Deck turns your Stream Deck keys into a live dashboard for the drives in your PC. Every key updates once a second, with the neon look of a proper instrument panel.
+
+Nine actions
+
+• Disk Space — used space as a ring or a bar. Press to switch between percentage, used GB and bar.
+• Disk Health — remaining life, hours in service and start count, read from SMART. The one thing that warns you before a drive dies.
+• Disk Temperature — current and peak, with a colour-coded thermal scale.
+• Disk Activity — read and write throughput as lines, or a stacked histogram.
+• Disk Overview — every drive at a glance, each with a health dot.
+• Network, Fan, Power — throughput, RPM and watts from the same sensors.
+
+Alerts that reach you
+
+Set a threshold and the key frame flashes red: free space below 10%, temperature above 60 °C, remaining life under 20%. A dashboard that calls you instead of waiting to be watched.
+
+One key, every drive
+
+Turn on rotation and a single key cycles through all your drives or sensors. Press it to jump ahead, hold it to open a full-screen dashboard — included as ready-made profiles for Stream Deck, XL, Mini and +.
+
+Everything is configurable: colours (presets or RGB sliders), text size and position, bar count, rotation speed, thresholds.
+
+Requirements
+
+Windows 10 or later. Disk space and I/O work out of the box. Temperature, SMART health, fans, network and power need LibreHardwareMonitor with its web server enabled, or HWiNFO. English and Italian.
