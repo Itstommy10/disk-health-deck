@@ -1,0 +1,46 @@
+{
+  "Name": "Disk Health Deck",
+  "Description": "Disk dashboard for your desk: free space, SMART health, I/O activity, temperatures, plus network, fans and power. Threshold alerts flash the key when a disk runs low, overheats or wears out. Sensors require LibreHardwareMonitor (web server enabled) or HWiNFO.",
+  "com.diskdeck.monitor.usage": {
+    "Name": "Disk Space",
+    "Tooltip": "Free space of a drive, as a ring or a bar."
+  },
+  "com.diskdeck.monitor.activity": {
+    "Name": "Disk Activity",
+    "Tooltip": "Live read and write throughput, as lines or a histogram."
+  },
+  "com.diskdeck.monitor.overview": {
+    "Name": "Disk Overview",
+    "Tooltip": "Compact bars with the usage of every drive."
+  },
+  "com.diskdeck.monitor.temp": {
+    "Name": "Disk Temperature",
+    "Tooltip": "Drive temperature with a colour-coded scale."
+  },
+  "com.diskdeck.monitor.power": {
+    "Name": "Power",
+    "Tooltip": "Power draw of a CPU, GPU or other component, with history."
+  },
+  "com.diskdeck.monitor.back": {
+    "Name": "Back",
+    "Tooltip": "Return to the previous profile. Meant for the plugin disk view."
+  },
+  "com.diskdeck.monitor.health": {
+    "Name": "Disk Health",
+    "Tooltip": "Remaining life, power-on hours and start count (SMART)."
+  },
+  "com.diskdeck.monitor.network": {
+    "Name": "Network",
+    "Tooltip": "Live download and upload of a network interface."
+  },
+  "com.diskdeck.monitor.fan": {
+    "Name": "Fan",
+    "Tooltip": "Fan speed in RPM, with history."
+  },
+  "Localization": {
+    "Disks": "Disks",
+    "Disks Mini": "Disks Mini",
+    "Disks XL": "Disks XL",
+    "Disks Plus": "Disks Plus"
+  }
+}

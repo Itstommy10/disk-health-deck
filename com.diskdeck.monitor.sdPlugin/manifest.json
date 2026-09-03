@@ -8,7 +8,7 @@
   "Category": "Disk Health Deck",
   "CategoryIcon": "imgs/category",
   "Icon": "imgs/plugin",
-  "URL": "https://github.com/",
+  "URL": "https://github.com/Itstommy10/disk-health-deck",
   "SDKVersion": 3,
   "Software": {
     "MinimumVersion": "6.9"

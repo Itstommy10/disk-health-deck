@@ -1,25 +1,43 @@
 {
+  "Name": "Disk Health Deck",
+  "Description": "Cruscotto dei dischi sulla scrivania: spazio libero, salute SMART, attivita' I/O, temperature, piu' rete, ventole e consumi. Gli allarmi fanno lampeggiare il tasto quando un disco si riempie, scalda o si consuma. I sensori richiedono LibreHardwareMonitor (web server attivo) oppure HWiNFO.",
+  "com.diskdeck.monitor.usage": {
+    "Name": "Spazio disco",
+    "Tooltip": "Mostra lo spazio occupato di un disco con indicatore ad anello."
+  },
+  "com.diskdeck.monitor.activity": {
+    "Name": "Attivita' disco",
+    "Tooltip": "Grafico in tempo reale di lettura/scrittura del disco."
+  },
+  "com.diskdeck.monitor.overview": {
+    "Name": "Riepilogo dischi",
+    "Tooltip": "Barre compatte con l'occupazione di tutti i dischi."
+  },
+  "com.diskdeck.monitor.temp": {
+    "Name": "Temperatura disco",
+    "Tooltip": "Temperatura del disco letta da LibreHardwareMonitor o HWiNFO."
+  },
+  "com.diskdeck.monitor.power": {
+    "Name": "Potenza",
+    "Tooltip": "Consumo in watt di CPU, GPU o altro componente, con storico."
+  },
+  "com.diskdeck.monitor.back": {
+    "Name": "Torna indietro",
+    "Tooltip": "Torna al profilo precedente. Pensato per la vista dischi del plugin."
+  },
+  "com.diskdeck.monitor.health": {
+    "Name": "Salute disco",
+    "Tooltip": "Vita residua, ore di servizio e accensioni (dati SMART)."
+  },
+  "com.diskdeck.monitor.network": {
+    "Name": "Rete",
+    "Tooltip": "Download e upload in tempo reale di una interfaccia di rete."
+  },
+  "com.diskdeck.monitor.fan": {
+    "Name": "Ventola",
+    "Tooltip": "Giri al minuto di una ventola, con storico."
+  },
   "Localization": {
-    "Disk Space": "Spazio disco",
-    "Free space of a drive, as a ring or a bar.": "Mostra lo spazio occupato di un disco con indicatore ad anello.",
-    "Disk Activity": "Attivita' disco",
-    "Live read and write throughput, as lines or a histogram.": "Grafico in tempo reale di lettura/scrittura del disco.",
-    "Disk Overview": "Riepilogo dischi",
-    "Compact bars with the usage of every drive.": "Barre compatte con l'occupazione di tutti i dischi.",
-    "Disk Temperature": "Temperatura disco",
-    "Drive temperature with a colour-coded scale.": "Temperatura del disco letta da LibreHardwareMonitor o HWiNFO.",
-    "Power": "Potenza",
-    "Power draw of a CPU, GPU or other component, with history.": "Consumo in watt di CPU, GPU o altro componente, con storico.",
-    "Back": "Torna indietro",
-    "Return to the previous profile. Meant for the plugin disk view.": "Torna al profilo precedente. Pensato per la vista dischi del plugin.",
-    "Disk Health": "Salute disco",
-    "Remaining life, power-on hours and start count (SMART).": "Vita residua, ore di servizio e accensioni (dati SMART).",
-    "Network": "Rete",
-    "Live download and upload of a network interface.": "Download e upload in tempo reale di una interfaccia di rete.",
-    "Fan": "Ventola",
-    "Fan speed in RPM, with history.": "Giri al minuto di una ventola, con storico.",
-    "Disk Health Deck": "Disk Health Deck",
-    "Disk dashboard for your desk: free space, SMART health, I/O activity, temperatures, plus network, fans and power. Threshold alerts flash the key when a disk runs low, overheats or wears out. Sensors require LibreHardwareMonitor (web server enabled) or HWiNFO.": "Cruscotto dei dischi sulla scrivania: spazio libero, salute SMART, attivita' I/O, temperature, piu' rete, ventole e consumi. Gli allarmi fanno lampeggiare il tasto quando un disco si riempie, scalda o si consuma. I sensori richiedono LibreHardwareMonitor (web server attivo) oppure HWiNFO.",
     "Disks": "Dischi",
     "Disks Mini": "Dischi Mini",
     "Disks XL": "Dischi XL",

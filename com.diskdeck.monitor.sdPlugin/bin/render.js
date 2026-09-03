@@ -52,6 +52,7 @@ const STRINGS = {
 		warm: "WARM",
 		hot: "HOT",
 		critical: "CRITICAL",
+		starts: "starts",
 	},
 	it: {
 		free: "liberi",
@@ -78,6 +79,7 @@ const STRINGS = {
 		warm: "TIEPIDO",
 		hot: "CALDO",
 		critical: "CRITICO",
+		starts: "avvii",
 	},
 };
 
@@ -614,7 +616,7 @@ export function renderHealth({ label, life, hours, count, labelColor, labelSize,
   ${pct ? `<path d="${arc(cx, cy, r, START, START + (SWEEP * pct) / 100)}" fill="none" stroke="${color}" stroke-width="${stroke}" stroke-linecap="round" filter="url(#glow)"/>` : ""}
   <text x="${cx}" y="${cy + 2}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="${center.length > 3 ? 20 : 23}" font-weight="700" fill="${color}">${center}</text>
   <text x="${cx}" y="${cy + 20}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600" fill="${DIM}">${t("life")}</text>
-  <text x="${cx}" y="${H - 10}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="${subFont}" font-weight="600" fill="${subColor || DIM}">${hours != null ? `${Math.round(hours).toLocaleString(t("locale"))} h · ${years.toFixed(1)} ${t("years")}` : ""}${count != null && hours == null ? `${count} avvii` : ""}</text>`;
+  <text x="${cx}" y="${H - 10}" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="${subFont}" font-weight="600" fill="${subColor || DIM}">${hours != null ? `${Math.round(hours).toLocaleString(t("locale"))} h · ${years.toFixed(1)} ${t("years")}` : ""}${count != null && hours == null ? `${count} ${t("starts")}` : ""}</text>`;
 	return toDataUri(frame(color, inner));
 }
 

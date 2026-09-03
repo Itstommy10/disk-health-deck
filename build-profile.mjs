@@ -135,11 +135,16 @@ for (const layout of LAYOUTS) {
 	const zip = `${out}.zip`;
 	fs.rmSync(out, { force: true });
 	fs.rmSync(zip, { force: true });
-	execFileSync("powershell.exe", [
-		"-NoProfile",
-		"-Command",
-		`Compress-Archive -Path '${work}' -DestinationPath '${zip}' -Force`,
-	]);
+	if (process.platform === "win32") {
+		execFileSync("powershell.exe", [
+			"-NoProfile",
+			"-Command",
+			`Compress-Archive -Path '${work}' -DestinationPath '${zip}' -Force`,
+		]);
+	} else {
+		// Fuori da Windows (CI, macOS, Linux) usiamo `zip`, mantenendo la cartella radice come Compress-Archive.
+		execFileSync("zip", ["-qr", zip, path.basename(work)], { cwd: path.dirname(work) });
+	}
 	fs.renameSync(zip, out);
 	console.log(`${layout.name}: griglia ${layout.columns}x${layout.rows} (${layout.model})`);
 }
